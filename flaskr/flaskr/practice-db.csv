@@ -1,0 +1,4 @@
+id,sentence,candidate1,candidate2
+1,n1,'sentence1','candidate1','candidate2'
+2,n2,'sentence2','candidate1','candidate2'
+3,n3,'sentence3','candidate1','candidate2'

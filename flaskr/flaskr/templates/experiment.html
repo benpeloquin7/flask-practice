@@ -1,0 +1,23 @@
+{% block body %}
+  <h2>{{ data.sentence }}</h2>
+  <form>
+    {{ data.csrf }}
+      <div class="input text">
+          <select>
+            <option value={{data.candidate1}}>{{data.candidate1}}</option>
+            <option value={{data.candidate2}}>{{data.candidate2}}</option>
+        </select>
+      </div>
+  </form>
+
+  <!--<h2>{{ data.sentence }}</h2>-->
+  <!--<ul class="data">-->
+  <!--{% if data %}-->
+    <!--<li>{{ data.candidate1|safe }}</li>-->
+    <!--<li>{{ data.candidate2|safe }}</li>-->
+  <!--{% else %}-->
+    <!--<li><em>Error, something has gone wrong.</em></li>-->
+  <!--{% endif %}-->
+  </ul>
+{% endblock %}
+<p><a href="{{ url_for('conclusion') }}" class="button"> <button type="button" onclick="this.blur();">Next</button></a></p>

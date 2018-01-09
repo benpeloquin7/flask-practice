@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Flaskr</title>
+<head>
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<!-- The instructions slide. -->
+<div class="slide" id="instructions">
+    <br/>
+    <!-- Logo -->
+    <center><img src="{{url_for('static', filename='images/stanford.png')}}"/>
+    </center>
+
+    <!-- Title -->
+    <p id='logo-text'>Stanford Language and Cognition Lab</p>
+
+    <!-- Instructions -->
+    <p class="block-text">In the following task you will see several sentences.
+        In every sentence, one word will be highlighted in <font
+                color="blue"><b>blue</b></font>. We want you to tell us some
+        other words the speaker could have used if they had felt differently
+        about their experience.</p>
+
+    <p class="block-text">For example, if you see a sentence like...</p>
+    <p class="block-text">
+        <center>"<i>In a recent review, someone said they thought the comedian was
+            <font color="blue"><b>funny</b></font></i>."
+        </center>
+    </p>
+    <p class="block-text">...some possible alternatives you might consider
+        could be '<i>boring</i>', '<i>dull</i>', or '<i>hilarious</i>'.</p>
+
+    <p class="block-text">Please consider the context in which the word was
+        used and simply list the first three alternatives that come to mind -
+        we’re interested in your spontaneous response!</p>
+
+    <p><a href="{{ url_for('experiment') }}" class="button"> <button type="button" onclick="this.blur();">Start</button></a></p>
+
+
+
+    <p class="block-text"><br> <b> Note: you won't be able to preview this HIT
+        before accepting it because it's so short. </b></p>
+
+    <p class="block-text" id="legal">By answering the following questions, you
+        are participating in a study being performed by cognitive scientists in
+        the Stanford Department of Psychology. If you have questions about this
+        research, please contact us at langcoglab@stanford.edu. You must be at
+        least 18 years old to participate. Your participation in this research
+        is voluntary. You may decline to answer any or all of the following
+        questions. You may decline further participation, at any time, without
+        adverse consequences. Your anonymity is assured; the researchers who
+        have requested your participation will not receive any personal
+        information about you.
+
+        We have recently been made aware that your public Amazon.com profile
+        can be accessed via your worker ID if you do not choose to opt out. If
+        you would like to opt out of this feature, you may follow instructions
+        available here:
+        <a href="http://www.amazon.com/gp/help/customer/display.html?nodeId=16465241">here</a>.
+    </p>
+</div>
+</body>
+</html>
